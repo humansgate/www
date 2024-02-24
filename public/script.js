@@ -8,7 +8,7 @@
     };
 
     fetch(
-        'http://api.usetoll.com/toll/settings',
+        'https://api.usetoll.com/toll/settings',
         {
             method: 'POST',
             body: JSON.stringify(data)
