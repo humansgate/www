@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <link href="style.css" rel="stylesheet">
+  <script src="script.js"></script>
   <title>UseToll - The easiest way to setup subscription on your website</title>
 </head>
 <body>
@@ -20,7 +21,7 @@
         <div class="col-md-6">
           <h2 class="text-center">Work on every website without changing anything!</h2>
           <p class="text-center">UseToll is a proxy to set in front of your website and redirect your traffic on it. Like that, UseToll will enable you to ask for a subscription on pages before forwarding the visitor to your website.</p>
-          <img src="https://via.placeholder.com/600x300" alt="A proxy server redirecting traffic to a website" class="img-fluid my-4">
+          <img src="img/proxy.svg" alt="A proxy server redirecting traffic to a website" class="img-fluid my-4">
         </div>
       </div>
     </section>
@@ -29,7 +30,7 @@
         <div class="col-md-6">
           <h2 class="text-center">Parametrize as you want</h2>
           <p class="text-center">UseToll will analyse keywoards in url to ask subscription or not. By specfied these keywords you can easly make content free and other paid.</p>
-          <img src="https://via.placeholder.com/600x300" alt="An encrypted padlock icon representing anonymity" class="img-fluid my-4">
+          <img src="img/paid.svg" alt="An encrypted padlock icon representing anonymity" class="img-fluid my-4">
         </div>
       </div>
     </section>
@@ -38,7 +39,7 @@
         <div class="col-md-6">
           <h2 class="text-center">Completely anonymous to use for website admin or visitor</h2>
           <p class="text-center">Your privacy is important to us. UseToll ensures that both the website admin and the visitor remain completely anonymous while using the service.</p>
-          <img src="https://via.placeholder.com/600x300" alt="An encrypted padlock icon representing anonymity" class="img-fluid my-4">
+          <img src="img/anonymous.svg" alt="An encrypted padlock icon representing anonymity" class="img-fluid my-4">
         </div>
       </div>
     </section>
@@ -48,18 +49,18 @@
         <div class="col-md-6">
           <h2 class="text-center">Free to use for admin, paid by hour for visitor</h2>
           <p class="text-center">As an admin, you can use UseToll for free. Visitors will be charged by the hour for using the service.</p>
-          <img src="https://via.placeholder.com/600x300" alt="A piggy bank icon representing cost savings" class="img-fluid my-4">
+          <img src="img/reading.svg" alt="A piggy bank icon representing cost savings" class="img-fluid my-4">
         </div>
       </div>
     </section>
     <section class="py-5">
       <div class="row justify-content-center">
         <div class="col-md-6">
-          <h2 class="text-center">Choose your way to use it with a stepper:</h2>
+          <h2 class="text-center">Choose your way with UseToll</h2>
           <div class="mt-4">
             <ul class="nav nav-tabs" id="myTab" role="tablist">
               <li class="nav-item" role="presentation">
-                <button class="nav-link active" id="ready-to-use-tab" data-bs-toggle="tab" data-bs-target="#ready-to-use" type="button" role="tab" aria-controls="ready-to-use" aria-selected="true">Ready to use with usetoll.com</button>
+                <button class="nav-link active" id="ready-to-use-tab" data-bs-toggle="tab" data-bs-target="#ready-to-use" type="button" role="tab" aria-controls="ready-to-use" aria-selected="true">With usetoll.com</button>
               </li>
               <li class="nav-item" role="presentation">
                 <button class="nav-link" id="self-hosted-tab" data-bs-toggle="tab" data-bs-target="#self-hosted" type="button" role="tab" aria-controls="self-hosted" aria-selected="false">Self hosted</button>
@@ -68,7 +69,7 @@
             <div class="tab-content" id="myTabContent">
               <div class="tab-pane fade show active" id="ready-to-use" role="tabpanel" aria-labelledby="ready-to-use-tab">
                 <h4>Fill form</h4>
-                <form>
+                <form onsubmit="post_form();return false;">
                   <div class="mb-3">
                     <label for="url" class="form-label">URL website target</label>
                     <input required type="text" class="form-control" placeholder="website.com" id="url" aria-describedby="website-target-help">
@@ -81,7 +82,7 @@
                   </div>
                   <div class="mb-3">
                     <label for="price" class="form-label">Price</label>
-                    <input required type="number" class="form-control" id="price" placeholder="0.05" aria-describedby="price-help">
+                    <input required type="number" step="0.01" class="form-control" id="price" placeholder="0.05" aria-describedby="price-help">
                     <div id="price-help" class="form-text">ALPH by hour to access website content</div>
                   </div>
 
@@ -95,9 +96,9 @@
                 </form>
                 <h4>Add DNS record</h4>
                 <label for="dns"></label>
-                <input id="dns" type="text" class="form-control" disabled value="configtoll.site.com TXT rfeargerfaefazfa23ZDF523Ffef">
+                <input id="dns" type="text" class="form-control" disabled value="yyy.usetoll.com TXT zzz">
                 <h4>Go to website</h4>
-                <button class="btn btn-primary form-control">https://site--com.usetoll.com</button>
+                <button disabled id="goto" class="btn btn-primary form-control">...</button>
               </div>
               <div class="tab-pane fade" id="self-hosted" role="tabpanel" aria-labelledby="self-hosted-tab">
                 <h4>Deploy docker image with variables</h4>
