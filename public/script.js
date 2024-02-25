@@ -16,15 +16,16 @@
     ).then(res => res.json().then(data => {
         console.log('DATA', data);
         const records = data.records;
-        const domain = document.getElementById('url').value;
+        const url = document.getElementById('url').value;
+        const domain = url.split('/')[2];
         document.getElementById('dns0').value = `configtoll.${domain} TXT ${records[0]}`;
         document.getElementById('dns1').value = `configtoll.${domain} TXT ${records[1]}`;
 
 
         const goto = document.getElementById('goto');
-        const url = `https://${domain.replaceAll('.', '--')}.usetoll.com`;
+        const urlUseToll = `${url.replaceAll('.', '--')}.usetoll.com`;
 
-        goto.innerText = url;
+        goto.innerText = urlUseToll;
         goto.onclick = () => window.open(url, '_blank');
         goto.disabled = false;
     }));
