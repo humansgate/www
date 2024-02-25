@@ -15,14 +15,14 @@
         }
     ).then(res => res.json().then(data => {
         console.log('DATA', data);
-        const records = data.record;
+        const records = data.records;
         const domain = document.getElementById('url').value;
         document.getElementById('dns0').value = `configtoll.${domain} TXT ${records[0]}`;
         document.getElementById('dns1').value = `configtoll.${domain} TXT ${records[1]}`;
 
 
         const goto = document.getElementById('goto');
-        const url = `https://${domain.replace('.', '--')}.usetoll.com`;
+        const url = `https://${domain.replaceAll('.', '--')}.usetoll.com`;
 
         goto.innerText = url;
         goto.onclick = () => window.open(url, '_blank');
