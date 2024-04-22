@@ -76,6 +76,23 @@
                     <div id="website-target-help" class="form-text">This data will be encrypted</div>
                   </div>
                   <div class="mb-3">
+                    <label for="keywords" class="form-label">Keywords</label>
+                    <input type="text" class="form-control" id="keywords" placeholder="prenium,subscription" aria-describedby="keywords-help">
+                    <div id="keywords-help" class="form-text">Every url page with these keywords will need subcription. Seperate words with ','. Leave empty to set all.</div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="authKey" class="form-label">Authentication (optional)</label>
+                    <div class="row">
+                      <div class="col">
+                        <input type="text" class="form-control" id="authKey" placeholder="Key" aria-describedby="authKey-help">
+                      </div>
+                      <div class="col">
+                        <input type="text" class="form-control" id="authValue" placeholder="Value" aria-describedby="authKey-help">
+                      </div>
+                    </div>
+                    <div id="authKey-help" class="form-text">Use an authentication header to access to your website</div>
+                  </div>
+                  <div class="mb-3">
                     <label for="address" class="form-label">Address</label>
                     <input required type="text" class="form-control" id="address" placeholder="1E383JcE4DwL..." aria-describedby="address-help">
                     <div id="address-help" class="form-text">Address to receive subscriptions</div>
@@ -84,12 +101,6 @@
                     <label for="price" class="form-label">Price</label>
                     <input required type="number" step="0.01" class="form-control" id="price" placeholder="0.05" aria-describedby="price-help">
                     <div id="price-help" class="form-text">ALPH by hour to access website content</div>
-                  </div>
-
-                  <div class="mb-3">
-                    <label for="keywords" class="form-label">Keywords</label>
-                    <input type="text" class="form-control" id="keywords" placeholder="prenium,subscription" aria-describedby="keywords-help">
-                    <div id="keywords-help" class="form-text">Every url page with these keywords will need subcription. Seperate words with ','. Leave empty to set all.</div>
                   </div>
 
                   <button type="submit" class="btn btn-primary">Encrypt</button>

@@ -4,6 +4,7 @@
         url: document.getElementById('url').value,
         address: document.getElementById('address').value,
         price_by_hour: document.getElementById('price').value,
+        authentication: document.getElementById('authKey').value + "=" + document.getElementById("authValue").value,
         keywords: document.getElementById('keywords').value.split(',')
     };
 
