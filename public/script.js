@@ -1,11 +1,25 @@
- function post_form() {
+ function parsePrice(id) {
+    const value = document.getElementById(id).value;
+    return value === "" ? 0 : parseFloat(value);
+ }
+
+function post_form() {
+    console.log('zerza', parseFloat(document.getElementById('alph-price').value))
 
     const data = {
         url: document.getElementById('url').value,
-        address: document.getElementById('address').value,
-        price_by_hour: document.getElementById('price').value,
         authentication: document.getElementById('authKey').value + "=" + document.getElementById("authValue").value,
-        keywords: document.getElementById('keywords').value.split(',')
+        keywords: document.getElementById('keywords').value.split(','),
+        blockchains: {
+            ALEPHIUM: {
+                address: document.getElementById('alph-address').value,
+                price_by_hour: parsePrice('alph-price'),
+            },
+            ETHEREUM: {
+                address: document.getElementById('eth-address').value,
+                price_by_hour: parsePrice('eth-price'),
+            }
+        }
     };
 
     fetch(
