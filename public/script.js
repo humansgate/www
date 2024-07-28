@@ -23,7 +23,7 @@ function post_form() {
     };
 
     fetch(
-        'https://api.usetoll.com/toll/settings',
+        'https://api.usetoll.com/toll/api/v1/configs',
         {
             method: 'POST',
             body: JSON.stringify(data)
