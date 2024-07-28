@@ -14,11 +14,11 @@ function post_form() {
         blockchains: {
             ALEPHIUM: {
                 address: document.getElementById('alph-address').value,
-                price_by_hour: parsePrice('alph-price'),
+                priceByHour: parsePrice('alph-price'),
             },
             ETHEREUM: {
                 address: document.getElementById('eth-address').value,
-                price_by_hour: parsePrice('eth-price'),
+                priceByHour: parsePrice('eth-price'),
             }
         }
     };
