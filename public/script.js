@@ -30,13 +30,14 @@ function post_form() {
             headers: {"Content-Type": "application/json"},
             body: JSON.stringify(data)
         }
-    ).then(res => res.json().then(data => {
-        console.log('DATA', data);
-        const records = data.records;
+    ).then(res => res.json().then(records => {
+        console.log('DATA', records);
         const url = document.getElementById('url').value;
         const domain = url.split('/')[2];
         document.getElementById('dns0').value = `configtoll.${domain} TXT ${records[0]}`;
         document.getElementById('dns1').value = `configtoll.${domain} TXT ${records[1]}`;
+        document.getElementById('dns2').value = `configtoll.${domain} TXT ${records[2]}`;
+
 
 
         const goto = document.getElementById('goto');
