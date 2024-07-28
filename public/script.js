@@ -26,6 +26,7 @@ function post_form() {
         'https://api.usetoll.com/toll/api/v1/configs',
         {
             method: 'POST',
+            headers: {"Content-Type": "application/json"},
             body: JSON.stringify(data)
         }
     ).then(res => res.json().then(data => {
