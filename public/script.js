@@ -24,7 +24,7 @@ function post_form() {
     };
 
     fetch(
-        'http://localhost:8080/toll/api/v1/configs',
+        'https://api.usetoll.com/toll/api/v1/configs',
         {
             method: 'POST',
             headers: {"Content-Type": "application/json"},
