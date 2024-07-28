@@ -6,10 +6,10 @@
 function post_form() {
     const data = {
         url: document.getElementById('url').value,
-        authentication: [
-            document.getElementById('authKey').value,
-            document.getElementById("authValue").value
-        ],
+        authentication: {
+            key: document.getElementById('authKey').value,
+            value: document.getElementById("authValue").value
+        },
         keywords: document.getElementById('keywords').value.split(','),
         blockchains: {
             ALEPHIUM: {
@@ -24,7 +24,7 @@ function post_form() {
     };
 
     fetch(
-        'https://api.usetoll.com/toll/api/v1/configs',
+        'http://localhost:8080/toll/api/v1/configs',
         {
             method: 'POST',
             headers: {"Content-Type": "application/json"},
