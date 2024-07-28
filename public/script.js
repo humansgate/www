@@ -4,11 +4,12 @@
  }
 
 function post_form() {
-    console.log('zerza', parseFloat(document.getElementById('alph-price').value))
-
     const data = {
         url: document.getElementById('url').value,
-        authentication: document.getElementById('authKey').value + "=" + document.getElementById("authValue").value,
+        authentication: [
+            document.getElementById('authKey').value,
+            document.getElementById("authValue").value
+        ],
         keywords: document.getElementById('keywords').value.split(','),
         blockchains: {
             ALEPHIUM: {
