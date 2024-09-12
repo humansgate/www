@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>UseToll</title>
+        <title id="t::title::title">...</title>
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Bootstrap icons-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
@@ -16,20 +16,22 @@
         <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;1,400&amp;display=swap" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <script src="https://unpkg.com/i18next/dist/umd/i18next.min.js"></script>
+
     </head>
     <body id="page-top">
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm" id="mainNav">
             <div class="container px-5">
-                <a class="navbar-brand fw-bold" href="#page-top">UseToll</a>
+                <a class="navbar-brand fw-bold" href="#page-top" id="t::nav::title">...</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     Menu
                     <i class="bi-list"></i>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
-                        <li class="nav-item"><a class="nav-link me-lg-3" target="_blank" href="https://app.usetoll.com/usetoll/ui/login">Sign up</a></li>
-                        <li class="nav-item"><a class="nav-link me-lg-3" target="_blank" href="https://app.usetoll.com/usetoll/ui/login">Sign in</a></li>
+                        <li class="nav-item"><a class="nav-link me-lg-3" target="_blank" href="https://app.usetoll.com/usetoll/ui/login" id="t::nav::signup">...</a></li>
+                        <li class="nav-item"><a class="nav-link me-lg-3" target="_blank" href="https://app.usetoll.com/usetoll/ui/login" id="t::nav::signin">...</a></li>
                     </ul>
                 </div>
             </div>
@@ -41,8 +43,8 @@
                     <div class="col-lg-6">
                         <!-- Mashead text and app badges-->
                         <div class="mb-5 mb-lg-0 text-center text-lg-start">
-                            <h1 class="display-1 lh-1 mb-3">Put crypto-paid pages on any website.</h1>
-                            <p class="lead fw-normal text-muted mb-5">UseToll will enable you to ask for a crypto subscription by hour on any pages of your website</p>
+                            <h1 class="display-1 lh-1 mb-3" id="t::head::subtitle">...</h1>
+                            <p class="lead fw-normal text-muted mb-5" id="t::head::subsubtitle">...</p>
                             <div class="align-items-center">
                                 <span class="me-lg-3 mb-4 mb-lg-0"><img class="app-badge" src="assets/img/wordpress.png" alt="..." /></span>
                                 <span class="me-lg-3 mb-4 mb-lg-0"><img class="app-badge" src="assets/img/drupal.png" alt="..." /></span>
@@ -88,7 +90,7 @@
             <div class="container px-5">
                 <div class="row gx-5 justify-content-center">
                     <div class="col-xl-8">
-                        <div class="h2 fs-1 text-white mb-4">"UseToll disrupts traditional subscription by enabling true micro-payments, ideal for scenarios where users only need temporary access."</div>
+                        <div class="h2 fs-1 text-white mb-4" id="t::quote::quote">...</div>
                         <img src="assets/img/gazette.png" alt="..." style="height: 6rem; margin-bottom: -30px" />
                     </div>
                 </div>
@@ -98,23 +100,23 @@
         <section id="features">
             <div class="container px-5">
                 <div class="row gx-5 align-items-center">
-                    <div class="mb-5 mb-lg-0">
+                    <div class="col-lg-8 order-lg-1 mb-5 mb-lg-0">
                         <div class="container-fluid px-5">
                             <div class="row gx-5">
                                 <div class="col-md-6 mb-5">
                                     <!-- Feature item-->
                                     <div class="text-center">
                                         <i class="bi-globe icon-feature text-gradient d-block mb-3"></i>
-                                        <h3 class="font-alt">Work everywhere</h3>
-                                        <p class="text-muted mb-0">Start today by creating an account no need to install something.</p>
+                                        <h3 class="font-alt" id="t::keypoint::keypoint-1-title">...</h3>
+                                        <p class="text-muted mb-0" id="t::keypoint::keypoint-1-description">...</p>
                                     </div>
                                 </div>
                                 <div class="col-md-6 mb-5">
                                     <!-- Feature item-->
                                     <div class="text-center">
                                         <i class="bi-sliders icon-feature text-gradient d-block mb-3"></i>
-                                        <h3 class="font-alt">Parametrize</h3>
-                                        <p class="text-muted mb-0">Choose crypto accepted, price by hour, pages to monetize.</p>
+                                        <h3 class="font-alt" id="t::keypoint::keypoint-2-title">...</h3>
+                                        <p class="text-muted mb-0" id="t::keypoint::keypoint-2-description">...</p>
                                     </div>
                                 </div>
                             </div>
@@ -123,23 +125,23 @@
                                     <!-- Feature item-->
                                     <div class="text-center">
                                         <i class="bi-incognito icon-feature text-gradient d-block mb-3"></i>
-                                        <h3 class="font-alt">Anonymous</h3>
-                                        <p class="text-muted mb-0">Webmaster and the visitor remain completely anonymous.</p>
+                                        <h3 class="font-alt" id="t::keypoint::keypoint-3-title">...</h3>
+                                        <p class="text-muted mb-0" id="t::keypoint::keypoint-3-description"></p>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <!-- Feature item-->
                                     <div class="text-center">
                                         <i class="bi-piggy-bank icon-feature text-gradient d-block mb-3"></i>
-                                        <h3 class="font-alt">Paid as you go</h3>
-                                        <p class="text-muted mb-0">Visitors will subscribe by hour for using your website.</p>
+                                        <h3 class="font-alt" id="t::keypoint::keypoint-4-title">...</h3>
+                                        <p class="text-muted mb-0" id="t::keypoint::keypoint-4-description">...</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!--
-                    <div class="col-lg-8 order-lg-0">
+                    <div class="col-lg-4 order-lg-0">
+                        <!-- Features section device mockup-->
                         <div class="features-device-mockup">
                             <svg class="circle" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
                                 <defs>
@@ -154,14 +156,17 @@
                                 <rect x="-32.54" y="78.39" width="305.92" height="84.05" rx="42.03" transform="translate(-49.88 120.42) rotate(-45)"></rect></svg
                             ><svg class="shape-2 d-none d-sm-block" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="50"></circle></svg>
                             <div class="device-wrapper">
-                                <div class="device" data-device="macbook" data-orientation="landscape" data-color="black">
+                                <div class="device" data-device="iPhoneX" data-orientation="portrait" data-color="black">
                                     <div class="screen bg-black">
+                                        <!-- PUT CONTENTS HERE:-->
+                                        <!-- * * This can be a video, image, or just about anything else.-->
+                                        <!-- * * Set the max width of your media to 100% and the height to-->
+                                        <!-- * * 100% like the demo example below.-->
                                         <video muted="muted" autoplay="" loop="" style="max-width: 100%; height: 100%"><source src="assets/img/demo-visitor.mov" type="video/mp4" /></video>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    -->
                     </div>
                 </div>
             </div>
@@ -171,13 +176,8 @@
             <div class="container px-5">
                 <div class="row gx-5 align-items-center justify-content-center justify-content-lg-between">
                     <div class="col-12 col-lg-5">
-                        <h2 class="display-4 lh-1 mb-4">Accept crypto subscription in minutes. No KYC</h2>
-                        <p class="lead fw-normal text-muted mb-5 mb-lg-0">
-                            1. Create an account.<br>
-                            2. Set up your Zone DNS with UseToll data provided. <br>
-                            3. Go to your dashboard to configure your recipe address, price by hour, etc.<br>
-                            4. Done ✅
-                        </p>
+                        <h2 class="display-4 lh-1 mb-4" id="t::tutorial::tutorial-title">...</h2>
+                        <p class="lead fw-normal text-muted mb-5 mb-lg-0" id="t::tutorial::tutorial-description">...</p>
                     </div>
                     <div class="col-sm-8 col-md-6">
                         <div class="px-5 px-sm-0"><img class="img-fluid" src="assets/img/card.png" alt="..." /></div>
@@ -189,7 +189,7 @@
         <footer class="bg-black text-center py-5">
             <div class="container px-5">
                 <div class="text-white-50 small">
-                    <div class="mb-2">&copy; Your Website 2023. All Rights Reserved.</div>
+                    <div class="mb-2" id="t::footer::footer">...</div>
                     <a href="#!">Privacy</a>
                     <span class="mx-1">&middot;</span>
                     <a href="#!">Terms</a>
@@ -198,80 +198,11 @@
                 </div>
             </div>
         </footer>
-        <!-- Feedback Modal-->
-        <div class="modal fade" id="feedbackModal" tabindex="-1" aria-labelledby="feedbackModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                    <div class="modal-header bg-gradient-primary-to-secondary p-4">
-                        <h5 class="modal-title font-alt text-white" id="feedbackModalLabel">Send feedback</h5>
-                        <button class="btn-close btn-close-white" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body border-0 p-4">
-                        <!-- * * * * * * * * * * * * * * *-->
-                        <!-- * * SB Forms Contact Form * *-->
-                        <!-- * * * * * * * * * * * * * * *-->
-                        <!-- This form is pre-integrated with SB Forms.-->
-                        <!-- To make this form functional, sign up at-->
-                        <!-- https://startbootstrap.com/solution/contact-forms-->
-                        <!-- to get an API token!-->
-                        <form id="contactForm" data-sb-form-api-token="API_TOKEN">
-                            <!-- Name input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
-                                <label for="name">Full name</label>
-                                <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
-                            </div>
-                            <!-- Email address input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
-                                <label for="email">Email address</label>
-                                <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
-                                <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
-                            </div>
-                            <!-- Phone number input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
-                                <label for="phone">Phone number</label>
-                                <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
-                            </div>
-                            <!-- Message input-->
-                            <div class="form-floating mb-3">
-                                <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
-                                <label for="message">Message</label>
-                                <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
-                            </div>
-                            <!-- Submit success message-->
-                            <!---->
-                            <!-- This is what your users will see when the form-->
-                            <!-- has successfully submitted-->
-                            <div class="d-none" id="submitSuccessMessage">
-                                <div class="text-center mb-3">
-                                    <div class="fw-bolder">Form submission successful!</div>
-                                    To activate this form, sign up at
-                                    <br />
-                                    <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
-                                </div>
-                            </div>
-                            <!-- Submit error message-->
-                            <!---->
-                            <!-- This is what your users will see when there is-->
-                            <!-- an error submitting the form-->
-                            <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
-                            <!-- Submit Button-->
-                            <div class="d-grid"><button class="btn btn-primary rounded-pill btn-lg disabled" id="submitButton" type="submit">Submit</button></div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <!-- * *                               SB Forms JS                               * *-->
-        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+        <script src="i18n/en.js"></script>
+        <script src="js/translate.js"></script>
     </body>
 </html>
