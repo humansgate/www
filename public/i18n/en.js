@@ -1,7 +1,7 @@
 enTranslate = {
     "title": "UseToll",
     "subtitle": "Put crypto-paid pages on any website",
-    "subsubstile": "UseToll will enable you to ask for a crypto subscription by hour on any pages of your website",
+    "subsubtitle": "UseToll will enable you to ask for a crypto subscription by hour on any pages of your website",
     "quote": "\"UseToll disrupts traditional subscription by enabling true micro-payments, ideal for scenarios where users only need temporary access.\"",
     "signin": "Sign In",
     "signup": "Sign up",
