@@ -11189,3 +11189,43 @@ footer a:hover, footer a:active, footer a:focus {
     max-width: 17rem;
   }
 }
+
+.pricing-card {
+  border: none;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+}
+
+.pricing-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.pricing-header {
+
+  border-radius: 15px 15px 0 0;
+  padding: 2rem;
+}
+
+.pricing-features {
+  padding: 2rem;
+}
+
+.btn-custom {
+  border-radius: 50px;
+  padding: 0.75rem 2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+.btn-custom:hover {
+  transform: scale(1.05);
+}
+
+.feature-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
