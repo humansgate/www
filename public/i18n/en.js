@@ -5,6 +5,7 @@ enTranslate = {
     "quote": "\"UseToll disrupts traditional subscription by enabling true micro-payments, ideal for scenarios where users only need temporary access.\"",
     "signin": "Sign In",
     "signup": "Sign up",
+    "contact": "Contact",
     "comingsoon": "Coming Soon",
     "keypoint-1-title": "Work everywhere",
     "keypoint-1-description": "Start by creating an account today. Nothing to install.",
@@ -33,7 +34,7 @@ enTranslate = {
     "pricing-premise": "On Premise",
     "pricing-premise-subtitle": " by month",
     "pricing-premise-1": "Inside your infra",
-    "pricing-premise-2": "No more fees. One payment",
+    "pricing-premise-2": "Fixed fees",
     "pricing-premise-3": "Use your own domain",
-    "footer": "© usetoll 2024. All Right Reserved",
+    "footer": "© usetoll 2025. All Right Reserved",
 }

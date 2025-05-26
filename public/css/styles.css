@@ -11229,3 +11229,9 @@ footer a:hover, footer a:active, footer a:focus {
   height: 20px;
   margin-right: 10px;
 }
+
+.custom-nav-item {
+  border-radius: 10px; /* Adjust the value for desired roundness */
+  background-color: var(--bs-primary); /* Light grey background */
+  color: white !important;
+}
