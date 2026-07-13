@@ -11235,3 +11235,71 @@ footer a:hover, footer a:active, footer a:focus {
   background-color: var(--bs-primary); /* Light grey background */
   color: white !important;
 }
+
+.terminal {
+  background-color: #1e1e1e;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+  margin-top: 1.5rem;
+}
+
+.terminal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #323232;
+  padding: 0.6rem 1rem;
+}
+
+.terminal-buttons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.terminal-btn {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.terminal-btn-red { background-color: #ff5f56; }
+.terminal-btn-yellow { background-color: #ffbd2e; }
+.terminal-btn-green { background-color: #27c93f; }
+
+.terminal-copy {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  background: transparent;
+  border: 1px solid #555;
+  color: #ccc;
+  font-size: 0.8rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.terminal-copy:hover {
+  background-color: #444;
+  color: #fff;
+}
+
+.terminal-body {
+  margin: 0;
+  padding: 1rem 1.25rem;
+  color: #e6e6e6;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  white-space: pre;
+  overflow-x: auto;
+}
+
+.terminal-body code {
+  color: inherit;
+  background: transparent;
+  padding: 0;
+}
