@@ -32,3 +32,20 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 });
+
+    const copyBtn = document.getElementById("copyBtn");
+    const questionText = document.getElementById("questionText");
+
+    copyBtn.addEventListener("click", async () => {
+    try {
+    await navigator.clipboard.writeText(questionText.textContent.trim());
+    copyBtn.classList.add("copied");
+    copyBtn.setAttribute("title", "Copied!");
+    setTimeout(() => {
+    copyBtn.classList.remove("copied");
+    copyBtn.setAttribute("title", "Copy to clipboard");
+}, 1500);
+} catch (err) {
+    console.error("Failed to copy:", err);
+}
+});

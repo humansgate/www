@@ -4,6 +4,8 @@ enTranslate = {
     "subsubtitle": "UseToll protect your website from bots while keeping a seamless user experience.",
     "quote": "A bot behaves like a human but on different hardware. UseToll completely disrupts anti-bot filters by segregate on hardware rather than behavior",
     "tryit": "Try it now",
+    "tryit-sentence-1": "This page is only available for humans!",
+    "tryit-sentence-2": "Test it yourself -- ask any AI:",
     "install": "Install",
     "code": "Code",
     "comingsoon": "Coming Soon",

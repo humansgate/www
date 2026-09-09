@@ -1,0 +1,57 @@
+UseToll
+
+NAVIGATION
+- Code
+- Install
+- Try it now
+
+HEADER
+Bot-proof your site in minutes
+UseToll protect your website from bots while keeping a seamless user experience.
+
+QUOTE
+A bot behaves like a human but on different hardware. UseToll completely disrupts anti-bot filters by segregate on hardware rather than behavior
+
+FEATURES
+1. Work everywhere
+   No setup on website is need. Just put UseToll in front of your website as a proxy.
+
+2. Customisable
+   Chose bot latency and page to protect
+
+3. Seamless for user
+   User does nothing. The automated verification takes place in the blink of an eye.
+
+4. Free
+   UseToll is completely open source and free.
+
+TRY IT
+Try it now!
+This website demo.usetoll.com is reachable by humans.
+But if you ask a bot to go, it couldn't.
+
+INSTALL
+Install
+
+docker run ghcr.io/usetoll/proxy \
+  -e PORT=8080 \
+  -e TARGET=https://site.to.protect
+
+HOW IT WORKS
+How it works?
+
+Online, bots behave like humans. Distinguishing them by behavior alone has become nearly impossible.
+
+But humans differ in one crucial way: they browse on real devices with powerful graphics hardware (GPU) — laptops, phones, tablets. Bots run on headless CPU servers.
+
+UseToll turns this asymmetry into a shield.
+
+It asks each visitor to solve a Proof of Work challenge that is:
+- Blazing fast on modern GPUs (invisible to real users)
+- Painfully slow on the standard CPUs bots rely on
+
+No cookies. No fingerprinting. No annoying puzzles. Just an economic wall that makes bot traffic prohibitively expensive.
+
+FOOTER
+© UseToll 2026. All Rights Reserved
+Privacy · Terms · FAQ

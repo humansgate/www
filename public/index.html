@@ -20,23 +20,7 @@
 
     </head>
     <body id="page-top">
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm" id="mainNav">
-            <div class="container px-5">
-                <img src="assets/img/name.svg" style="height: 40px;">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    Menu
-                    <i class="bi-list"></i>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
-                        <li class="nav-item"><a class="nav-link me-lg-3" target="_blank" href="http://github.com/usetoll" id="t::nav::code">...</a></li>
-                        <li class="nav-item"><a class="nav-link me-lg-3" href="#install" id="t::nav::install">...</a></li>
-                        <li class="nav-item"><a class="nav-link me-lg-3 custom-nav-item" href="#tryit" id="t::nav::tryit">...</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+
         <!-- Mashead header-->
         <header class="masthead">
             <div class="container px-5">
@@ -44,15 +28,9 @@
                     <div class="col-lg-6">
                         <!-- Mashead text and app badges-->
                         <div class="mb-5 mb-lg-0 text-center text-lg-start">
+                            <img src="assets/img/name.svg" style="height: 100px; margin-bottom: 50px">
                             <h1 class="display-1 lh-1 mb-3" id="t::head::subtitle">...</h1>
                             <p class="lead fw-normal text-muted mb-5" id="t::head::subsubtitle">...</p>
-                            <div class="align-items-center">
-                                <span class="me-lg-3 mb-4 mb-lg-0"><img class="app-badge" src="assets/img/wordpress.png" alt="..." /></span>
-                                <span class="me-lg-3 mb-4 mb-lg-0"><img class="app-badge" src="assets/img/drupal.png" alt="..." /></span>
-                                <span class="me-lg-3 mb-4 mb-lg-0"><img class="app-badge" src="assets/img/joomla.png" alt="..." /></span>
-                                <span class="me-lg-3 mb-4 mb-lg-0"><img class="app-badge" src="assets/img/php.png" alt="..." /></span>
-                                <span class="me-lg-3 mb-4 mb-lg-0"><img class="app-badge" src="assets/img/bootstrap.png" alt="..." /></span>
-                            </div>
                         </div>
                     </div>
                     <div class="col-lg-6">
@@ -77,7 +55,8 @@
                                         <!-- * * This can be a video, image, or just about anything else.-->
                                         <!-- * * Set the max width of your media to 100% and the height to-->
                                         <!-- * * 100% like the demo example below.-->
-                                        <video muted autoplay playsinline loop style="max-width: 100%; height: 100%"><source src="assets/img/animation.mp4" type="video/mp4" /></video>                                    </div>
+                                        <video muted autoplay playsinline loop style="max-width: 100%; height: 100%"><source src="assets/img/animation.mp4" type="video/mp4" /></video>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -139,34 +118,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 order-lg-0">
-                        <!-- Features section device mockup-->
-                        <div class="features-device-mockup">
-                            <svg class="circle" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                                <defs>
-                                    <linearGradient id="circleGradient" gradientTransform="rotate(45)">
-                                        <stop class="gradient-start-color" offset="0%"></stop>
-                                        <stop class="gradient-end-color" offset="100%"></stop>
-                                    </linearGradient>
-                                </defs>
-                                <circle cx="50" cy="50" r="50"></circle></svg
-                            ><svg class="shape-1 d-none d-sm-block" viewBox="0 0 240.83 240.83" xmlns="http://www.w3.org/2000/svg">
-                                <rect x="-32.54" y="78.39" width="305.92" height="84.05" rx="42.03" transform="translate(120.42 -49.88) rotate(45)"></rect>
-                                <rect x="-32.54" y="78.39" width="305.92" height="84.05" rx="42.03" transform="translate(-49.88 120.42) rotate(-45)"></rect></svg
-                            ><svg class="shape-2 d-none d-sm-block" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="50"></circle></svg>
-                            <div class="device-wrapper">
-                                <div class="device" data-device="iPhoneX" data-orientation="portrait" data-color="black">
-                                    <div class="screen bg-black">
-                                        <!-- PUT CONTENTS HERE:-->
-                                        <!-- * * This can be a video, image, or just about anything else.-->
-                                        <!-- * * Set the max width of your media to 100% and the height to-->
-                                        <!-- * * 100% like the demo example below.-->
-                                        <video muted autoplay playsinline loop style="max-width: 100%; height: 100%"><source src="assets/img/demo-visitor.mov" type="video/mp4" /></video>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+
                 </div>
             </div>
         </section>
@@ -176,10 +128,25 @@
                 <div class="row gx-5 align-items-center justify-content-center justify-content-lg-between">
                     <div class="col-12 col-lg-5">
                         <h2 class="display-4 lh-1 mb-4" id="t::tutorial::tutorial-title">...</h2>
-                        <p class="lead fw-normal text-muted mb-5 mb-lg-0" id="t::tutorial::tutorial-description">...</p>
+                        <div class="card">
+                            <p id="t::tryit::tryit-sentence-1">This page is only available for humans !</p>
+
+
+                            <p id="t::tryit::tryit-sentence-2">Test it yourself — ask any AI:</p>
+
+                            <div class="question-box">
+                                <button class="copy-btn" id="copyBtn" aria-label="Copy question" title="Copy to clipboard">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                                        <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                                    </svg>
+                                </button>
+                                <p class="question-text" id="questionText">Can you access this site and tell me the content? https://usetoll.com</p>
+                            </div>
+                        </div>
                     </div>
                     <div class="col-sm-8 col-md-6">
-                        <div class="px-5 px-sm-0"><img class="img-fluid" src="assets/img/asking.png" alt="..." /></div>
+                        <div class="px-5 px-sm-0"><img class="img-fluid" style="min-width: 300px"  src="assets/img/asking.png" alt="..." /></div>
                     </div>
                 </div>
             </div>

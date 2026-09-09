@@ -11303,3 +11303,68 @@ footer a:hover, footer a:active, footer a:focus {
   background: transparent;
   padding: 0;
 }
+
+.card {
+  max-width: 540px;
+  width: 100%;
+  padding: 2.5rem;
+}
+
+
+blockquote {
+  margin: 1.5rem 0 0;
+  padding: 1rem 1.25rem;
+  background: white;
+  border-radius: 8px;
+  color: black;
+}
+blockquote {
+  margin: 1.5rem 0 0;
+  padding: 1rem 1.25rem;
+  background: white;
+  border-radius: 8px;
+  color: black;
+}
+
+.question-box {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+
+.copy-btn {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border: 1px solid black;
+  border-radius: 6px;
+  background: white;
+  color: black;
+  cursor: pointer;
+  transition: color 0.15s ease, border-color 0.15s ease, background 0.15s ease;
+}
+
+.copy-btn:hover {
+  color: var(--bs-primary);
+  border-color: var(--bs-primary);
+}
+
+.copy-btn.copied {
+  color: #16a34a;
+  border-color: #16a34a;
+}
+
+.copy-btn svg {
+  width: 18px;
+  height: 18px;
+}
+
+.question-text {
+  margin: 0;
+  color: var(--text);
+  font-style: italic;
+}
+
