@@ -1,7 +1,7 @@
 enTranslate = {
     "title": "UseToll",
     "subtitle": "Bot-proof your site in minutes",
-    "subsubtitle": "UseToll protect your website from bots while keeping a seamless user experience.",
+    "subsubtitle": "UseToll protect your website from bots while keeping a seamless user experience for humans.",
     "quote": "A bot behaves like a human but on different hardware. UseToll completely disrupts anti-bot filters by segregate on hardware rather than behavior",
     "tryit": "Try it now",
     "tryit-sentence-1": "This page is only available for humans!",
@@ -27,10 +27,10 @@ enTranslate = {
         "\n" +
         "                <p>UseToll turns this asymmetry into a shield.</p>\n" +
         "\n" +
-        "                <p>It asks each visitor to solve a Proof of Work challenge that is:</p>\n" +
+        "                <p>It asks each visitor to solve a computational challenge that is:</p>\n" +
         "                <ul>⚡ Blazing fast on modern GPUs (invisible to real users)</ul>\n" +
         "                <ul>🐌 Painfully slow on the standard CPUs bots rely on</ul>\n" +
         "\n" +
-        "                <p>No cookies. No fingerprinting. No annoying puzzles. Just an economic wall that makes bot traffic prohibitively expensive.</p>",
+        "                <p>No fingerprinting. No annoying puzzles. Just an economic wall that makes bot traffic prohibitively expensive.</p>",
     "footer": "© UseToll 2026. All Right Reserved",
 }
