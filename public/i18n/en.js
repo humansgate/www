@@ -7,6 +7,7 @@ enTranslate = {
     "tryit-sentence-1": "This page is only available for humans!",
     "tryit-sentence-2": "Test it yourself -- ask any AI:",
     "install": "Install",
+    "documentation": "UseToll act like a proxy to setup between your inbound trafic and your server. More configuration can be found on <a href='https://github.com/usetoll/proxy'>Github</a>.",
     "code": "Code",
     "comingsoon": "Coming Soon",
     "keypoint-1-title": "Work everywhere",
