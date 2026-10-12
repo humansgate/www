@@ -1,4 +1,4 @@
-UseToll
+HumansGate
 
 Bot-proof your site in minutes
-UseToll protect your website from bots while keeping a seamless user experience.
+HumansGate protect your website from bots while keeping a seamless user experience.
