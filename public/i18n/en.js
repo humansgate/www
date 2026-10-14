@@ -7,7 +7,7 @@ enTranslate = {
     "tryit-sentence-1": "This page is only available for humans!",
     "tryit-sentence-2": "Test it yourself -- ask any AI:",
     "install": "Install",
-    "documentation": "HumansGate act like a proxy to setup between your inbound trafic and your server. More configuration can be found on <a href='https://github.com/humansGate/proxy'>Github</a>.",
+    "documentation": "HumansGate act like a proxy to setup between your inbound trafic and your server. More configuration can be found on <a href='https://github.com/humansgate/gate'>Github</a>.",
     "code": "Code",
     "comingsoon": "Coming Soon",
     "keypoint-1-title": "Work everywhere",
