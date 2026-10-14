@@ -6,8 +6,10 @@
     <meta name="description" content=""/>
     <meta name="author" content=""/>
     <title id="t::title::title">...</title>
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico"/>
-    <!-- Bootstrap icons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
+    <link rel="manifest" href="/assets/site.webmanifest">    <!-- Bootstrap icons-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet"/>
     <!-- Google fonts-->
     <link rel="preconnect" href="https://fonts.gstatic.com"/>
@@ -31,7 +33,7 @@
             <div class="col-lg-6">
                 <!-- Mashead text and app badges-->
                 <div class="mb-5 mb-lg-0 text-center text-lg-start">
-                    <img src="assets/img/name.svg" style="height: 100px; margin-bottom: 50px">
+                    <img src="assets/img/logo_titre.svg" style="height: 150px; margin-bottom: 50px">
                     <h1 class="display-1 lh-1 mb-3" id="t::head::subtitle">...</h1>
                     <p class="lead fw-normal text-muted mb-5" id="t::head::subsubtitle">...</p>
                 </div>
@@ -111,7 +113,7 @@
                                 <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
                             </svg>
                         </button>
-                        <p class="question-text" id="questionText">Does this site https://humansGate.com provide a free service?</p>
+                        <p class="question-text" id="questionText">Does this site https://humansgate.com provide a free service?</p>
                     </div>
 
                     <p style="margin-top: 40px">
@@ -146,7 +148,7 @@
                             <span class="terminal-copy-label">Copy</span>
                         </button>
                     </div>
-                    <pre class="terminal-body"><code>docker run ghcr.io/humansGate/proxy \
+                    <pre class="terminal-body"><code>docker run ghcr.io/humansgate/gate \
   -e PORT=8080 \
   -e TARGET=https://site.to.protect</code></pre>
                 </div>
