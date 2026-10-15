@@ -22,6 +22,7 @@ enTranslate = {
     "tutorial-description": "This website <a href='http://demo.humansGate.com' target='_blank'>demo.humansGate.com</a> is reachable by humans.<br><br>" +
         "But If you ask a bot to go, it couldn't.",
     "how": "How it works ?",
+    "contact": "Contact",
     "explain": "                <p>Online, bots behave like humans. Distinguishing them by behavior alone has become nearly impossible.</p>\n" +
         "\n" +
         "                <p>But humans differ in one crucial way: they browse on real devices with powerful graphics hardware (GPU) — laptops, phones, tablets. Bots run on headless CPU servers.</p>\n" +
